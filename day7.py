@@ -8,7 +8,7 @@ def reduce_2_operator(operands):
     a, b = operands[0], operands[1]
     r = operands[2:]
 
-    c1 =[a + b] + r
+    c1 = [a + b] + r
     c2 = [a * b] + r
 
     return [c1, c2]
@@ -17,7 +17,7 @@ def reduce_3_operator(operands):
     a, b = operands[0], operands[1]
     r = operands[2:]
 
-    c1 =[a + b] + r
+    c1 = [a + b] + r
     c2 = [a * b] + r
     c3 = [int(str(a) + str(b))] + r
 
