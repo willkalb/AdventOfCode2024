@@ -7,7 +7,7 @@ def exec(mul):
 
     return int(n1) * int(n2)
 
-def parse(text, p2 = False):
+def parse(text):
     instructions, instructions_2 = [], []
     do = True
     for i in range(0, len(text)):

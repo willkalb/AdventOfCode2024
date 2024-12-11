@@ -1,5 +1,5 @@
 def isSafe(list): 
-    for i in range(0, len(list) - 1):
+    for i in range(0, len(list[:-1])):
         if abs(list[i] - list[i + 1]) > 3:
             return False
         if abs(list[i] - list[i + 1]) < 1:

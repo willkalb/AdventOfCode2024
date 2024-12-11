@@ -2,10 +2,7 @@ with open("./Inputs/day6.txt", "r") as f:
     patrol_map = [list(line) for line in f.read().strip().split("\n")]
 
 d = [[0, -1], [1, 0], [0, 1], [-1, 0]]
-
-print([ c for c in [ row for row in patrol_map ] if c == "^" ])
-
-starting_pos = (69, 44)
+starting_pos = [ [ (x, y) for x, c in enumerate(row) if c == "^" ] for y, row in enumerate(patrol_map) if "^" in row ][0][0]
 cols = len(patrol_map[0])
 rows = len(patrol_map)
 
