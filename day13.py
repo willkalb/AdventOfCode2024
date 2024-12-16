@@ -44,6 +44,7 @@ for i, machine in enumerate(m1):
     # Px = (Ap * Ax) + (Bp * Bx)
 
     # substitution for Ap
+    # Py = (Ap * Ay) + (Bp * By)
     # Py - (Bp * By) = (Ap * Ay)
     # (Ap * Ay) = Py - (Bp * By)
     # Ap = (Py - (Bp * By)) / Ay
