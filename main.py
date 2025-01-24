@@ -20,7 +20,8 @@ run_days = {
     17: False,
     18: False,
     19: False,
-    20: True,
+    20: False,
+    21: True
 }
 
 for iday in run_days:
